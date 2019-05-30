@@ -12,6 +12,6 @@ Check out [Awesome Powershell Azure Functions](https://github.com/dfinke/awesome
 # How To Run
 
 1. `git clone https://github.com/dfinke/powershell-azure-function-stockdata.git`
-1. cd `powershell-azure-function-helloworld`
+1. cd `powershell-azure-function-stockdata`
 1. `func start --cors *`
 1. Paste into a browser `http://localhost:7071/api/StockDataView`
