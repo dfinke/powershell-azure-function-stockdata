@@ -1,8 +1,10 @@
 # Powershell Azure Function Stock Data
 
-Stock Data + an Interactive Grid - served from PowerShell Azure Functions.
+Stock Data + an Interactive Grid - data and web page served from PowerShell Azure Functions.
 
-Check out [Awesome Powershell Azure Functions](https://github.com/dfinke/awesome-powershell-azure-functions)
+![](/images/GetStockData.png)
+
+## Check out [Awesome Powershell Azure Functions](https://github.com/dfinke/awesome-powershell-azure-functions)
 
 # Some Prerequisites
 
