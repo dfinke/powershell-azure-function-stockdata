@@ -4,7 +4,7 @@ Stock Data + an Interactive Grid - data and web page served from PowerShell Azur
 
 ![](/images/GetStockData.png)
 
-### Try the version deployed in Azure https://powershell-stockdata.azurewebsites.net/api/StockDataView
+> Try the version deployed in Azure https://powershell-stockdata.azurewebsites.net/api/StockDataView
 
 ## Check out [Awesome Powershell Azure Functions](https://github.com/dfinke/awesome-powershell-azure-functions)
 
