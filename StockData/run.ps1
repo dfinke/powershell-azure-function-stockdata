@@ -20,8 +20,19 @@ $data = Invoke-RestMethod "$baseurl/stock/market/batch?symbols=$($symbols)&types
 
 $result = @()
 foreach ($name in $data.psobject.Properties.name) {
-    $result += $data.$name.quote |
-    Select-Object Symbol, CompanyName, Sector, Open, Close, High, Low, YTDChange
+    # $result += $data.$name.quote |Select-Object Symbol, CompanyName, Open, Close, High, Low, YTDChange, AvgTotalVolume
+
+    $current = $data.$name.quote
+    $result += [PSCustomObject][Ordered]@{
+        Symbol                 = $current.Symbol
+        'Company Name'         = $current.CompanyName
+        Open                   = $current.Open
+        Close                  = $current.Close
+        High                   = $current.High
+        Low                    = $current.Low
+        'YTD Change'           = $current.YTDChange
+        'Average Total Volume' = $current.AvgTotalVolume
+    }
 }
 
 Push-OutputBinding -Name Response -Value @{
