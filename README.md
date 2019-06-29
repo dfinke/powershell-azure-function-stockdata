@@ -10,6 +10,8 @@ Stock Data + an Interactive Grid - data and web page served from PowerShell Azur
 
 # Some Prerequisites
 
+- You need am IEX token, setup one here https://iexcloud.io/docs/api/#introduction
+    - set "IEXToken" in `local.settings.json` for local testing and in the `Application Settings` in the Azure portal.
 - [Install .NET Core SDK 2.2+](https://dotnet.microsoft.com/download) (required by Azure Functions Core Tools and available on all supported platforms).
 - Install version 2.x of the [Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#v2).
 
